@@ -1,0 +1,69 @@
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div {
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    width: calc(32.5% - 25px);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4f4f4;
+}
+
+section img {
+    width: 100%;
+}
+
+.ChoiceSelected {
+    background-color: #cfe3ff;
+}
+
+.ChoiceUnselected {
+    opacity: 0.6;
+}
+
+.hidden {
+    display: none;
+}
+
+#end {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#end h1 {
+    margin: 0;
+}
+
+#end p {
+    margin: 18px 0;
+}
+
+#end button {
+    height: 50px;
+    background-color: #cecece;
+    width: 100%;
+}
+
+#end button:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 700px) {
+    header div {
+        display: none;
+    }
+
+    article {
+        width: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    .choice-grid div {
+        width: calc(49% - 20px);
+    }
+}
